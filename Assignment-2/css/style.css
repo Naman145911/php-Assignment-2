@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* adds background gradient */
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #3498db, #26c281);
+}
+
+/* puts form in center of page and adds gradient to the background */
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #3498db, #e74c3c);
+
+}
+
+/* form styling */
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* styling for headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* input text styling */
+input[type="text"],
+input[type="password"] {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* buttons styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* error message styling for signup page */
+.error-message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+}
+
+/* logout button styling */
+.logout-btn {
+    display: inline-block;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* a href links styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* username text styling for success page */
+.special{
+    color: #12e179;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type="text"],
+    input[type="password"],
+    button {
+        width: 100%;
+    }
+}
